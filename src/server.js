@@ -12,7 +12,13 @@ const app = express()
 const PORT = process.env.PORT || 5000
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://munimji.vercel.app'],
+  origin: [
+    'http://localhost:5173',
+    
+    'https://munimji-git-main-rproject-29s-projects.vercel.app',
+
+    'https://munimji-i6j5q0fd2-rproject-29s-projects.vercel.app',
+  ],
   credentials: true,
 }))
 app.use(express.json())
